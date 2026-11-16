@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileCraft Dental | Advanced Implant & Smile Design in Gurugram</title>
+    <meta name="description" content="Experience painless dentistry at SmileCraft Gurugram. Expert care in Implants, Laser RCT, and Aligners by Dr. Aarav Mehta. Visit us in Sector 44.">
+    
+    <!-- OpenGraph for WhatsApp -->
+    <meta property="og:title" content="SmileCraft Advanced Dental & Implant Studio | Gurugram">
+    <meta property="og:description" content="Painless laser dentistry, expert dental implants, and premium smile makeovers in Sector 44, Gurugram.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?w=1200&h=630&fit=crop">
+
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dental: { dark: '#080808', teal: '#0d9488', blue: '#0284c7' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #080808; color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: clip; }
+        .glass-card { background: rgba(18, 18, 18, 0.65); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.3s ease; }
+        .glass-card:hover { border-color: rgba(13, 148, 136, 0.45); transform: translateY(-4px); }
+        .comparison-range { -webkit-appearance: none; background: transparent; cursor: ew-resize; }
+        .comparison-range::-webkit-slider-thumb { -webkit-appearance: none; width: 44px; height: 44px; background: #ffffff; border: 3px solid #0d9488; border-radius: 50%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d9488'%3E%3Cpath d='M8 5l-5 7 5 7v-4h8v4l5-7-5-7v4H8V5z'/%3E%3C/svg%3E"); background-size: 20px; background-repeat: no-repeat; background-position: center; }
+    </style>
+</head>
+<body class="bg-grid-pattern pt-6">
+
+    <main class="w-full max-w-6xl px-4 sm:px-6 mx-auto relative z-10">
+        <!-- Header -->
+        <header class="flex justify-between items-center bg-[#111111]/80 border border-white/10 rounded-full p-3 backdrop-blur-md mb-16 shadow-xl">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full bg-teal-800 flex items-center justify-center font-bold text-white">SC</div>
+                <div>
+                    <span class="block text-sm font-bold">SmileCraft</span>
+                    <span class="block text-[10px] uppercase text-gray-400">Advanced Dental Studio</span>
+                </div>
+            </div>
+            <a href="https://wa.me/919811234567" class="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-full font-bold text-xs transition">Book Consultation</a>
+        </header>
+
+        <!-- Hero -->
+        <section class="mb-20">
+            <h1 class="text-4xl md:text-7xl font-bold leading-tight mb-6">
+                Your Smile, <br> <span class="text-teal-500">Perfectly Crafted.</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl">Led by Dr. Aarav Mehta, we provide precision dental care in Gurugram. From pain-free implants to aesthetic makeovers, your comfort is our priority.</p>
+        </section>
+
+        <!-- Services -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="font-bold text-lg mb-2">Laser RCT</h3>
+                <p class="text-gray-400 text-xs">Painless, single-sitting root canal therapy using advanced dental lasers.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="font-bold text-lg mb-2">Dental Implants</h3>
+                <p class="text-gray-400 text-xs">Full-mouth restoration with high-grade Zirconia crowns and precision implants.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="font-bold text-lg mb-2">Invisible Aligners</h3>
+                <p class="text-gray-400 text-xs">Customized clear aligner therapy for a straighter, confident smile.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="font-bold text-lg mb-2">Pediatric Care</h3>
+                <p class="text-gray-400 text-xs">Gentle, kid-friendly dentistry in a stress-free, hygienic environment.</p>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold text-center mb-10">See the <span class="text-teal-500">Transformations</span></h2>
+            <div class="relative w-full max-w-3xl mx-auto rounded-3xl overflow-hidden aspect-video border border-white/20 glass-card" id="comparisonContainer">
+                <img src="https://images.unsplash.com/photo-1606811971618-4486d54f319f?w=800&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+                <img src="https://images.unsplash.com/photo-1599908611832-6101c56f7091?w=800&fit=crop" class="absolute inset-0 w-full h-full object-cover" id="blueprintClipImg" style="clip-path: inset(0 50% 0 0);">
+                <div class="absolute top-0 bottom-0 w-0.5 bg-teal-500 z-20" id="sliderDivider" style="left: 50%;"></div>
+                <input type="range" min="0" max="100" value="50" class="comparison-range absolute inset-0 w-full h-full z-30" id="comparisonSlider">
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">Patient <span class="text-teal-500">Stories</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">"Zero pain during my single-sitting root canal! Dr. Aarav explained every step on screen before starting."</p>
+                    <span class="text-teal-400 text-sm font-bold">— Neha Verma, Sector 43</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-gray-300 italic mb-4">"Got my invisible aligners. Transparent pricing, no hidden charges, and super hygienic clinic."</p>
+                    <span class="text-teal-400 text-sm font-bold">— Karan Malhotra, Cyber City</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder -->
+        <section class="glass-card rounded-3xl p-10 mb-24 flex flex-col md:flex-row items-center gap-10">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=450&h=450&fit=crop" class="w-48 h-48 rounded-full border-4 border-teal-500/30">
+            <div>
+                <h2 class="text-3xl font-bold mb-2">Dr. Aarav Mehta</h2>
+                <p class="text-teal-400 font-semibold mb-4">MDS Prosthodontics & Implantologist (12+ Years Exp)</p>
+                <p class="text-gray-400">"My mission at SmileCraft is to blend clinical excellence with a compassionate touch. We don't just treat teeth; we restore confidence."</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/10 pt-12 pb-8 text-center text-gray-500">
+        <p>SmileCraft Advanced Dental Studio | 2nd Floor, Horizon Plaza, Sector 44, Gurugram</p>
+        <p class="mt-2">Tel: <a href="tel:+919811234567" class="text-white">+91 98112 34567</a></p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('comparisonSlider');
+        const clipImg = document.getElementById('blueprintClipImg');
+        const divider = document.getElementById('sliderDivider');
+        slider.addEventListener('input', (e) => {
+            const val = e.target.value;
+            clipImg.style.clipPath = `inset(0 ${100 - val}% 0 0)`;
+            divider.style.left = `${val}%`;
+        });
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "SmileCraft Advanced Dental & Implant Studio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2nd Floor, Horizon Plaza, Opposite Vyapar Kendra, Sector 44",
+        "addressLocality": "Gurugram",
+        "addressRegion": "Haryana",
+        "postalCode": "122003"
+      },
+      "telephone": "+919811234567"
+    }
+    </script>
+</body>
+</html>
